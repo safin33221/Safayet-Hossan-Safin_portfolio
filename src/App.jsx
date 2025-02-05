@@ -11,7 +11,7 @@ function App() {
 
 
   return (
-    <div className="bg-primary place-items-center place-content-center">
+    <div className="bg-primary ">
       <div className="bg-hero-pattern">
         <Navbar/>
         <Hero/>
