@@ -3,13 +3,13 @@ import '../App.css';
 import image from '../assets/safin.png'
 const Hero = () => {
     return (
-        <section className='w-full min-h-screen mx-auto px-16 '>
+        <section className='w-full min-h-screen mx-auto px-4 md:px-12 pt-28'>
             <div className='md:flex '>
-                <div className='flex gap-5  items-center'>
+                <div className='flex gap-5 flex-1 items-center'>
                     {/* Content */}
                     <div className='flex flex-col items-center justify-center '>
                         <div className="w-5 h-5 rounded-full  bg-[#915eff]" />
-                        <div className="w-1 sm:h-80 h-40  violet-gradient" />
+                        <div className="w-1 sm:h-80 h-80  violet-gradient" />
                     </div>
                     <div className='mt-6'>
                         <div>

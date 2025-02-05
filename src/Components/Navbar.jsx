@@ -28,7 +28,7 @@ const Navbar = () => {
 
 
     return (
-        <div className='px-16 mx-auto py-4'>
+        <div className='px-16 mx-auto py-4 fixed top-0 z-50 bg-primary mb-20 w-full'>
             <div className='flex justify-between items-center'>
                 <div className='flex text-white items-center'>
                     <img className='w-12 h-12' src={logo} alt="" />
