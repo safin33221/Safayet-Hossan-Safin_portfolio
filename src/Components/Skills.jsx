@@ -14,9 +14,9 @@ const Skills = () => {
         html, css, javascript, reactjs, tailwind, nodejs, mongodb, git, figma
     ]
     return (
-        <div>
+        <div className=''>
             <SectionTile heading="Skills & Technologies." subheading="My Expertise"/>
-            <div className='flex flex-wrap items-center justify-center gap-7 mx-auto px-12'>
+            <div className=' my-10 flex flex-wrap items-center justify-center gap-7 mx-auto px-12'>
                 {
                     skills.map(skill => <img className='w-20' src={skill}/>)
                 }
