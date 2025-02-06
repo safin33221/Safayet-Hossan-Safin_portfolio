@@ -45,7 +45,7 @@ const Contact = () => {
             })
     }
     return (
-        <div className="px-2">
+        <div className="px-2 pb-10">
             <SectionTile subheading="Get in touch" heading="Contact" />
 
             <div className={`p-2 md:px-10 md:flex gap-10 `}>
