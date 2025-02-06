@@ -2,10 +2,46 @@ import { MdEmail } from "react-icons/md";
 import SectionTile from "../Shared/SectionTile";
 import { FaGithub, FaLinkedinIn, FaWhatsapp } from "react-icons/fa";
 import { FaLocationDot } from "react-icons/fa6";
+import emailjs from "@emailjs/browser";
+import Swal from "sweetalert2";
+import { useState } from "react";
+import { TbFidgetSpinner } from "react-icons/tb";
 
 const Contact = () => {
-    const handleSubmit = (e) =>{
+    const [loading, setLoading] = useState(false)
+    const handleSubmit = (e) => {
         e.preventDefault()
+        setLoading(true)
+        const form = e.target
+        const name = form.name.value
+        const email = form.email.value
+        const message = form.message.value
+        const info = {
+            from_name: name,
+            to_name: "Safayet Hossan Safin",
+            from_email: email,
+            to_email: "safin33221@gmail.com",
+            message: message,
+        }
+        emailjs.send(import.meta.env.VITE_EmailJs_service_Id,
+            import.meta.env.VITE_EmailJs_templete_Id,
+            info,
+            import.meta.env.VITE_EmailJs_public_key)
+            .then(res => {
+                console.log(res);
+                if (res.text === 'OK') {
+                    setLoading(false)
+                    Swal.fire({
+                        position: "top-end",
+                        icon: "success",
+                        title: `Thank you ${name}. I will get back to you as soon as possible.`,
+                        showConfirmButton: false,
+                        timer: 2000,
+                        draggable: true
+                    });
+                    e.target.reset()
+                }
+            })
     }
     return (
         <div className="px-2">
@@ -86,8 +122,8 @@ const Contact = () => {
                             type='submit'
                             className='bg-tertiary m-5 py-4 px-8 rounded-xl outline-none  text-white font-bold shadow-md shadow-primary'
                         >
-                            send
-                            {/* {loading ? "Sending..." : "Send"} */}
+                            
+                            {loading ? <TbFidgetSpinner className="animate-spin m-auto" /> : "Send"}
                         </button>
                     </form>
                 </div>
