@@ -9,6 +9,7 @@ import git from '../assets/tech/git.png'
 import figma from '../assets/tech/figma.png'
 import firebase from '../assets/tech/firebase.webp'
 import SectionTile from '../Shared/SectionTile'
+import ScrollSection from '../Hooks/ScrollSection'
 
 const Skills = () => {
     const skills = [
@@ -26,4 +27,4 @@ const Skills = () => {
     );
 };
 
-export default Skills;
+export default ScrollSection(Skills,"skill");

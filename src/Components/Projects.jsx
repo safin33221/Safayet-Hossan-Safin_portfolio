@@ -7,6 +7,7 @@ import { Tilt } from 'react-tilt';
 import github from '../assets/github.png'
 import link from '../assets/link.svg'
 import '../App.css';
+import ScrollSection from '../Hooks/ScrollSection';
 
 const Projects = () => {
     const projects = [
@@ -160,4 +161,4 @@ const Projects = () => {
     );
 };
 
-export default Projects;
+export default ScrollSection(Projects,'project');

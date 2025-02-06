@@ -6,6 +6,7 @@ import emailjs from "@emailjs/browser";
 import Swal from "sweetalert2";
 import { useState } from "react";
 import { TbFidgetSpinner } from "react-icons/tb";
+import ScrollSection from "../Hooks/ScrollSection";
 
 const Contact = () => {
     const [loading, setLoading] = useState(false)
@@ -122,7 +123,7 @@ const Contact = () => {
                             type='submit'
                             className='bg-tertiary m-5 py-4 px-8 rounded-xl outline-none  text-white font-bold shadow-md shadow-primary'
                         >
-                            
+
                             {loading ? <TbFidgetSpinner className="animate-spin m-auto" /> : "Send"}
                         </button>
                     </form>
@@ -132,4 +133,4 @@ const Contact = () => {
     );
 };
 
-export default Contact;
+export default ScrollSection(Contact, "contact");

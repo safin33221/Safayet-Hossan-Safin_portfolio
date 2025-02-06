@@ -1,7 +1,12 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import logo from '../assets/logo.png'
+import menu from '../assets/menu.svg'
+import close from '../assets/close.svg'
 
 const Navbar = () => {
+    const [active, setActive] = useState('')
+    const [toggle, setToggle] = useState(false)
+    const [scroll,setScrolled] = useState(false)
     const navLinks = [
         {
             id: "home",
@@ -24,11 +29,24 @@ const Navbar = () => {
             title: "Contact",
         },
     ];
-    const [active, setActive] = useState('')
 
+    useEffect(() => {
+        const handleScroll = () => {
+            const scrollTop = window.scrollY;
+            if (scrollTop > 100) {
+                setScrolled(true);
+            } else {
+                setScrolled(false);
+            }
+        };
+
+        window.addEventListener("scroll", handleScroll);
+
+        return () => window.removeEventListener("scroll", handleScroll);
+    }, []);
 
     return (
-        <div className='px-2 md:px-16 mx-auto py-4 fixed top-0 z-50 bg-primary mb-20 w-full'>
+        <div className={` ${scroll?"bg-primary":"bg-transparent"} px-2 md:px-16 mx-auto py-4 fixed top-0 z-50  mb-20 w-full`}>
             <div className='flex justify-between items-center'>
                 <div className='flex text-white items-center'>
                     <img className='w-12 h-12' src={logo} alt="" />
@@ -41,15 +59,39 @@ const Navbar = () => {
                         {
                             navLinks?.map((link, idx) => <li
                                 key={idx}
-                                onClick={()=>setActive(link.title)}
+                                onClick={() => setActive(link.title)}
                                 className={`${active === link.title ? "text-white" : "text-secondary"}`}
                             ><a href={`#${link.id}`}>{link.title}</a></li>)
                         }
                     </ul>
                 </div>
-                <div>
+                <div className='flex items-center gap-4'>
                     <button className="btn bg-transparent text-white">Resume</button>
+                    <div>
+                        <img
+                            className='md:hidden' src={toggle ? close : menu} alt=""
+                            onClick={() => setToggle(!toggle)}
+                        />
+                        <div className={`${toggle ? 'flex' : 'hidden'} mt-4 transition-all duration-300 ease-linear p-6 black-gradient absolute top-14 right-5 mx-auto my-2 min-w-[140px] z-10 rounded-lg`}>
+                            <ul className='list-none felx justify-end items-start flex-col gap-4'>
+                                {navLinks?.map((nav) => (
+                                    <li
+                                        key={nav.id}
+                                        className={`${active === nav.title ? "text-white" : "text-secondary"
+                                            } hover:text-white font-poppins  font-medium cursor-pointer`}
+                                        onClick={() => {
+                                            setToggle(!toggle)
+                                            setActive(nav.title)
+                                        }}
+                                    >
+                                        <a href={`#${nav.id}`}>{nav.title}</a>
+                                    </li>
+                                ))}
+                            </ul>
+                        </div>
+                    </div>
                 </div>
+
             </div>
         </div>
     );

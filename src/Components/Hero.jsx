@@ -1,6 +1,7 @@
 import React from 'react';
 import '../App.css';
 import image from '../assets/safin.png'
+import ScrollSection from '../Hooks/ScrollSection';
 const Hero = () => {
     return (
         <section className='w-full min-h-screen mx-auto px-4 md:px-12 pt-28'>
@@ -72,4 +73,4 @@ const Hero = () => {
     );
 };
 
-export default Hero;
+export default ScrollSection(Hero ,"home");

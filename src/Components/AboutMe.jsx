@@ -3,6 +3,7 @@ import SectionTile from '../Shared/SectionTile';
 import { motion } from "framer-motion";
 import { FaReact, FaCode, FaGamepad, FaBook, FaLaptopCode } from "react-icons/fa";
 import '../App.css'
+import ScrollSection from '../Hooks/ScrollSection';
 const AboutMe = () => {
     return (
         <div>
@@ -83,7 +84,7 @@ const AboutMe = () => {
     );
 };
 
-export default AboutMe;
+export default ScrollSection(AboutMe,"about");
 
 
 
