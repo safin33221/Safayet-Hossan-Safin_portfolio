@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import logo from '../assets/logo.png'
 import menu from '../assets/menu.svg'
 import close from '../assets/close.svg'
+import { Link } from 'react-scroll';
 
 const Navbar = () => {
     const [active, setActive] = useState('')
@@ -57,11 +58,20 @@ const Navbar = () => {
                 <div className='hidden md:flex'>
                     <ul className='flex gap-3 '>
                         {
-                            navLinks?.map((link, idx) => <li
+                            navLinks?.map((link, idx) => <Link
                                 key={idx}
-                                onClick={() => setActive(link.title)}
-                                className={`${active === link.title ? "text-white" : "text-secondary"}`}
-                            ><a href={`#${link.id}`}>{link.title}</a></li>)
+                                to={link.id}
+                                smooth={true}
+                                duration={500}
+                                onClick={() => {
+                                    setActive(link.title)
+                                    window.scrollTo({
+                                        behavior: 'smooth'
+                                      });
+
+                                }}
+                                className={`${active === link.title ? "text-white" : "text-secondary"} cursor-pointer`}
+                            >{link.title}</Link>)
                         }
                     </ul>
                 </div>
