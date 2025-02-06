@@ -103,7 +103,7 @@ const Projects = () => {
                             max: 20,
                             scale: 1,
                             speed: 850,
-                            
+                        
                         }}
                         className='bg-tertiary p-5 h-full rounded-2xl sm:w-[360px] w-full mx-auto'
                     >
