@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import { FaReact, FaCode, FaGamepad, FaBook, FaLaptopCode } from "react-icons/fa";
 import '../App.css'
 import ScrollSection from '../Hooks/ScrollSection';
+import { PiStudentBold } from 'react-icons/pi';
 const AboutMe = () => {
     return (
         <div>
@@ -21,7 +22,7 @@ const AboutMe = () => {
                     </motion.p>
                 </div>
 
-                <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
                     <div
                         className='w-full  p-[1px] green-pink-gradient  rounded-[20px] shadow-card transition-all duration-300 ease-in-out'
                         whileHover={{ scale: 1.05 }}
@@ -29,7 +30,7 @@ const AboutMe = () => {
                         <div className='bg-tertiary rounded-[20px] py-5 px-12 min-h-[280px] flex justify-evenly items-center flex-col'>
                             <FaReact className="text-4xl mx-auto  text-teal-400 mb-4" />
                             <h3 className="text-xl font-semibold mb-2">What I Do</h3>
-                            <p className="text-gray-300 overflow-y-scroll h-28">
+                            <p className="text-gray-300  h-28">
                                 I specialize in <strong>React.js, Next.js, and Tailwind CSS</strong>, focusing on drive into a <strong>Fullstack Developer</strong>.
                             </p>
                         </div>
@@ -55,11 +56,13 @@ const AboutMe = () => {
                     >
                         <div className='bg-tertiary rounded-[20px] py-5 px-12 min-h-[280px] flex justify-evenly items-center flex-col'>
 
-                            <FaLaptopCode className="text-4xl mx-auto text-teal-400 mb-4" />
-                            <h3 className="text-xl font-semibold mb-2">Tech Stack</h3>
-                            <p className="text-gray-300 overflow-y-scroll h-28">
-                                **React.js, Next.js, Tailwind CSS, Firebase, Git, and Web Performance Optimization**.
+                            <PiStudentBold className="text-4xl mx-auto text-teal-400 mb-4" />
+                            <h3 className="text-xl font-semibold ">Diploma in Computer Science and Technology (Ongoing)</h3>
+                            <p className="text-gray-300  ">
+                            Feni Polytechnic Institute, Feni, Bangladesh
                             </p>
+                            
+                            <p>Currently II'm studying  Diploma in Computer Science and Technology, gaining expertise in App development, database management, and networking. Passionate about building scalable and efficient web applications.</p>
                         </div>
                     </div>
 
@@ -71,8 +74,8 @@ const AboutMe = () => {
 
                             <FaGamepad className="text-4xl mx-auto text-teal-400 mb-4" />
                             <h3 className="text-xl font-semibold mb-2">Hobbies & Interests</h3>
-                            <p className="text-gray-300 overflow-y-scroll h-28">
-                                Love **gaming 🎮, reading 📖, Turning Ideas Into Reality, and UI/UX design 🎨**.
+                            <p className="text-gray-300  h-28">
+                                Love <strong>gaming 🎮, Riding 🚴‍♂️, Turning Ideas Into Reality, and UI/UX design 🎨</strong>.
                             </p>
                         </div>
                     </div>

@@ -89,6 +89,7 @@ const Contact = () => {
                             <span className='text-white font-medium mb-2'>Your Name</span>
                             <input
                                 type='text'
+                                required
                                 name='name'
                                 // value={form.name}
                                 // onChange={handleChange}
@@ -100,6 +101,7 @@ const Contact = () => {
                             <span className='text-white font-medium mb-2'>Your email</span>
                             <input
                                 type='email'
+                                required
                                 name='email'
                                 // value={form.email}
                                 // onChange={handleChange}
@@ -112,6 +114,7 @@ const Contact = () => {
                             <textarea
                                 rows={3}
                                 name='message'
+                                required
                                 // value={form.message}
                                 // onChange={handleChange}
                                 placeholder='What you want to say?'
@@ -121,6 +124,7 @@ const Contact = () => {
 
                         <button
                             type='submit'
+                            
                             className='bg-tertiary m-5 py-4 px-8 rounded-xl outline-none  text-white font-bold shadow-md shadow-primary'
                         >
 

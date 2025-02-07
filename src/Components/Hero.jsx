@@ -5,7 +5,7 @@ import ScrollSection from '../Hooks/ScrollSection';
 const Hero = () => {
     return (
         <section className='w-full min-h-screen mx-auto px-4 md:px-12 pt-28'>
-            <div className='md:flex '>
+            <div className='flex flex-col-reverse md:flex-row  '>
                 <div className='flex gap-5 flex-1 items-center'>
                     {/* Content */}
                     <div className='flex flex-col items-center justify-center '>
@@ -66,7 +66,7 @@ const Hero = () => {
                     </div>
                 </div>
                 <div className=" flex-1 mx-auto" >
-                    <img src={image} className=" w-[400px] rounded-full" alt="" />
+                    <img src={image} className=" w-[400px] rounded-full border-2 border-[#271e5c] shadow-card" alt="" />
                 </div>
             </div>
         </section>

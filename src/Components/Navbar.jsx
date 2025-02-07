@@ -5,7 +5,7 @@ import close from '../assets/close.svg'
 import { Link } from 'react-scroll';
 
 const Navbar = () => {
-    const [active, setActive] = useState('')
+    const [active, setActive] = useState('home')
     const [toggle, setToggle] = useState(false)
     const [scroll, setScrolled] = useState(false)
     const navLinks = [
