@@ -2,6 +2,7 @@ import React from 'react';
 import '../App.css';
 import image from '../assets/safin.png'
 import ScrollSection from '../Hooks/ScrollSection';
+import resume from '../assets/safayet_hossan.pdf';
 const Hero = () => {
     return (
         <section className='w-full min-h-screen mx-auto px-4 md:px-12 pt-28'>
@@ -23,7 +24,7 @@ const Hero = () => {
                             <p className={`md:w-4/5 w-full text-gray-400 capitalize text-lg`}>Crafting innovative digital experiences that bring your ideas to life, blending creativity and functionality to build solutions that inspire, engage, and deliver results.</p>
                         </div>
                         <div className='mt-5'>
-                            <ul className='flex gap-3'>
+                            <ul className='flex gap-1 md:gap-3'>
                                 <li className='hover:scale-110 transition-all duration-300 ease-linear backdrop-filter '>
                                     <a  href="https://www.facebook.com/safin.2360" target='_blank'>
                                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 112.196 112.196" id="facebook" className='w-12'>
@@ -61,6 +62,7 @@ const Hero = () => {
                                         </svg>
                                     </a>
                                 </li>
+                                <li><a href={resume} target='_blank' download={resume}><button className=" p-3 border-2 rounded-xl  border-[#271e5c] bg-tertiary text-secondary hover:text-white flex gap-2"> <span className='hidden md:flex'>Download</span> Resume</button></a></li>
                             </ul>
                         </div>
                     </div>

@@ -1,4 +1,4 @@
-import { MdEmail } from "react-icons/md";
+import { MdAddIcCall, MdEmail } from "react-icons/md";
 import SectionTile from "../Shared/SectionTile";
 import { FaGithub, FaLinkedinIn, FaWhatsapp } from "react-icons/fa";
 import { FaLocationDot } from "react-icons/fa6";
@@ -61,7 +61,7 @@ const Contact = () => {
 
                         <div className='flex flex-col  justify-center mt-2'>
                             <h1 className='flex text-xl items-center text-gray-400 '><MdEmail className=' mx-2  ' />: safin33221@gmail.com</h1>
-                            <h1 className='flex text-xl items-center text-gray-400 '><FaWhatsapp className=' mx-2 ' />: 8801837429636</h1>
+                            <h1 className='flex text-xl items-center text-gray-400 '><MdAddIcCall className=' mx-2 ' />: +8801837429636</h1>
                             <h1 className='flex text-xl items-center text-gray-400 '><FaLinkedinIn className=' mx-2 ' />: Safayet Hossan Safin</h1>
                             <h1 className='flex text-xl items-center text-gray-400 '><FaGithub className=' mx-2 ' />: safin33221</h1>
 

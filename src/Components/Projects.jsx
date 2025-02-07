@@ -9,6 +9,7 @@ import link from '../assets/link.svg'
 import '../App.css';
 import ScrollSection from '../Hooks/ScrollSection';
 import { Link } from 'react-router';
+import { RiGlobalLine } from 'react-icons/ri';
 
 const Projects = () => {
     const projects = [
@@ -193,11 +194,8 @@ const Projects = () => {
                                     onClick={() => window.open(project.live_page_link, "_blank")}
                                     className='black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer'
                                 >
-                                    <img
-                                        src={link}
-                                        alt='source code'
-                                        className='w-1/2 h-1/2 object-contain text-white'
-                                    />
+                                    <RiGlobalLine className='w-1/2 h-1/2 object-contain text-white' />
+                                    
                                 </div>
                             </div>
                         </div>

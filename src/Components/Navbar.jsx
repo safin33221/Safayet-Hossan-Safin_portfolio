@@ -3,6 +3,7 @@ import logo from '../assets/logo.png'
 import menu from '../assets/menu.svg'
 import close from '../assets/close.svg'
 import { Link } from 'react-scroll';
+import resume from '../assets/safayet_hossan.pdf';
 
 const Navbar = () => {
     const [active, setActive] = useState('home')
@@ -47,12 +48,11 @@ const Navbar = () => {
     }, []);
 
     return (
-        <div className={` ${scroll ? "bg-primary" : "bg-transparent"} px-2 md:px-16 mx-auto py-4 fixed top-0 z-50  mb-20 w-full`}>
+        <div className={` ${scroll ? "bg-primary" : "bg-transparent"} px-4 md:px-16 mx-auto py-4 fixed top-0 z-50  mb-20 w-full`}>
             <div className='flex justify-between items-center'>
                 <div className='flex text-white items-center'>
-                    <img className='w-12 h-12' src={logo} alt="" />
-                    <h1>Safayet Hossan &nbsp;
-                        <span className='hidden md:flex'> | Safin</span>
+                    <img className='w-12 h-12 rounded-full' src={logo} alt="logo" />
+                    <h1 className='md:text-2xl flex gap-2'>Safayet Hossan <span className='hidden md:block'>Safin</span>
                     </h1>
                 </div>
                 <div className='hidden md:flex'>
@@ -74,7 +74,7 @@ const Navbar = () => {
                     </ul>
                 </div>
                 <div className='flex items-center gap-7'>
-                    <button className="btn bg-transparent text-white">Resume</button>
+                <a href={resume} target='_blank' download={resume}><button className="btn bg-transparent hover:bg-transparent text-secondary hover:text-white">Resume</button></a>
                     <div>
                         <img
                             className='md:hidden w-6' src={toggle ? close : menu} alt=""
