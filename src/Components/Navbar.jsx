@@ -48,7 +48,7 @@ const Navbar = () => {
     }, []);
 
     return (
-        <div className={` ${scroll ? "bg-primary" : "bg-transparent"} px-4 md:px-16 mx-auto py-4 fixed top-0 z-50  mb-20 w-full`}>
+        <div className={` ${scroll ? "backdrop-blur-sm bg-opacity-70 bg-primary bg-blend-overlay" : "bg-transparent"} px-4 md:px-16 mx-auto py-4 fixed top-0 z-50  mb-20 w-full`}>
             <div className='flex justify-between items-center'>
                 <div className='flex text-white items-center'>
                     <img className='w-12 h-12 rounded-full' src={logo} alt="logo" />
