@@ -31,7 +31,7 @@ const AboutMe = () => {
                             <FaReact className="text-4xl mx-auto  text-teal-400 mb-4" />
                             <h3 className="text-xl font-semibold mb-2">What I Do</h3>
                             <p className="text-gray-300  h-28">
-                                I specialize in <strong>React.js, Next.js, and Tailwind CSS</strong>, focusing on drive into a <strong>Fullstack Developer</strong>.
+                            Enthusiastic frontend developer passionate about transforming ideas into engaging web experiences and seeking to master modern UI technologies while enhancing design skills and contributing to building intuitive, high-performance applications.
                             </p>
                         </div>
                     </div>

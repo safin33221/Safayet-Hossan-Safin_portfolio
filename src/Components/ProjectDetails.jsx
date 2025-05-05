@@ -3,6 +3,7 @@ import { Link, useParams } from 'react-router';
 import health from '../assets/projects/health.png';
 import sportstore from '../assets/projects/sportstore.png';
 import restaurant from '../assets/projects/restaurant.png';
+import tastyride from '../assets/projects/tastyride.png'
 import '../App.css'
 import { FaArrowLeft } from 'react-icons/fa';
 
@@ -11,6 +12,55 @@ import { FaArrowLeft } from 'react-icons/fa';
 const ProjectDetails = () => {
     const { id } = useParams()
    const projects = [
+    {
+                id: 4,
+                name: "TastyRide - Smart Food Delivery Platform",
+                description:
+                    "A smart, feature-rich food delivery web application offering real-time order tracking, multi-language support, dynamic promotions, and subscription-based restaurant profiles to ensure an engaging user experience.",
+                tags: [
+                    {
+                        name: "react",
+                        color: "blue-text-gradient",
+                    },
+                    {
+                        name: "node.js",
+                        color: "green-text-gradient",
+                    },
+                    {
+                        name: "mongodb",
+                        color: "pink-text-gradient",
+                    },
+                    {
+                        name: "tailwind",
+                        color: "orange-text-gradient",
+                    },
+                    {
+                        name: "firebase",
+                        color: "red-text-gradient",
+                    },
+                    {
+                        name: "expressJs",
+                        color: "purple-text-gradient",
+                    }
+                ],
+                challenges_faced: [
+                    "Implementing real-time order tracking through multiple order stages",
+                    "Managing dynamic discounts and advertisement banners",
+                    "Creating a scalable multi-language translation system",
+                    "Handling complex user roles and permissions",
+                    "Integrating responsive UI for mobile-first design"
+                ],
+                potential_improvements: [
+                    "Integrating AI to suggest meals based on user behavior",
+                    "Adding delivery partner and logistics management module",
+                    "Enhancing analytics dashboard for restaurants",
+                    "Implementing offline mode with local storage caching",
+                    "Integrating voice assistant support for ordering"
+                ],
+                image: tastyride,
+                source_code_link: "https://github.com/safin33221/TastyRide",
+                live_page_link: "https://tastyride-cd1a3.web.app/"
+            },
                {
                    id: 1,
                    name: "Health Rex Store",
