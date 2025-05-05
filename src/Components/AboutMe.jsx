@@ -9,7 +9,7 @@ const AboutMe = () => {
     return (
         <div>
             <SectionTile subheading="Introduction" heading="About Me" />
-            <section className=" text-white py-12 px-6 md:px-20">
+            <section className=" text-white  px-16 ">
                 <div className="max-w-4xl mx-auto text-center">
 
                     <motion.p
@@ -22,7 +22,7 @@ const AboutMe = () => {
                     </motion.p>
                 </div>
 
-                <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div className=" mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
                     <div
                         className='w-full  p-[1px] green-pink-gradient  rounded-[20px] shadow-card transition-all duration-300 ease-in-out'
                         whileHover={{ scale: 1.05 }}

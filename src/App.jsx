@@ -11,8 +11,8 @@ function App() {
 
 
   return (
-    <div className="bg-primary ">
-      <div className="bg-hero-pattern">
+    <div className="bg-primary max-w-screen-2xl mx-auto  ">
+      <div className="bg-hero-pattern ">
         <Navbar/>
         <Hero/>
 
