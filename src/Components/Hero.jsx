@@ -1,88 +1,52 @@
 import React from 'react';
 import '../App.css';
-import image from '../assets/safin.png'
+import image from '../assets/safin.png';
 import ScrollSection from '../Hooks/ScrollSection';
 import resume from '../assets/safayet_hossan.pdf';
-import * as motion from "motion/react-client"
+
 const Hero = () => {
     return (
         <section className='w-full min-h-screen mx-auto px-4 md:px-12 pt-28'>
-            <div className='flex flex-col-reverse md:flex-row  '>
+            <div className='flex flex-col-reverse md:flex-row'>
                 <div className='flex gap-5 flex-1 items-center'>
                     {/* Content */}
-                    <div className='flex flex-col items-center justify-center '>
-                        <div className="w-5 h-5 rounded-full  bg-[#915eff]" />
-                        <div className="w-1 sm:h-80 h-80  violet-gradient" />
+                    <div className='flex flex-col items-center justify-center'>
+                        <div className="w-5 h-5 rounded-full bg-[#915eff]" />
+                        <div className="w-1 sm:h-80 h-80 violet-gradient" />
                     </div>
                     <div className='mt-6'>
                         <div>
-                            <h1 className='font-black text-white lg:text-4xl sm:text-3xl  text-2xl mt-5'>Hi, I'm <span className='text-[#915EFF]'>Safin</span></h1>
-                            <p className={`  font-black text-white-100 lg:text-5xl sm:text-4xl  text-2xl mt-5`}>
+                            <h1 className='font-black text-white lg:text-4xl sm:text-3xl text-2xl mt-5'>Hi, I'm <span className='text-[#915EFF]'>Safin</span></h1>
+                            <p className={`font-black text-white-100 lg:text-5xl sm:text-4xl text-2xl mt-5`}>
                                 Frontend Web Developer<br className='sm:block hidden' />
-
                             </p>
                             <p className="text-2xl text-white-100 my-4">Your Vision, My Code_</p>
                             <p className={`md:w-4/5 w-full text-gray-400 capitalize text-lg`}>Crafting innovative digital experiences that bring your ideas to life, blending creativity and functionality to build solutions that inspire, engage, and deliver results.</p>
                         </div>
                         <div className='mt-5'>
                             <ul className='flex gap-1 md:gap-3'>
-                                <motion.div
-
-                                    initial={{ opacity: 0, scale: 0.5 }}
-                                    animate={{ opacity: 1, scale: 1 }}
-                                    transition={{
-                                        duration: 0.5,
-                                        delay: 0.5,
-                                        ease: [0, 0.71, 0.2, 1.01],
-                                    }}
-                                >
-                                    <li className='hover:scale-110 transition-all duration-300 ease-linear backdrop-filter '>
-                                        <a href="https://www.facebook.com/safin.2360" target='_blank'>
-                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 112.196 112.196" id="facebook" className='w-12'>
-                                                <circle cx="56.098" cy="56.098" r="56.098" fill="#3b5998"></circle>
-                                                <path fill="#fff" d="M70.201 58.294h-10.01v36.672H45.025V58.294h-7.213V45.406h7.213v-8.34c0-5.964 2.833-15.303 15.301-15.303l11.234.047v12.51h-8.151c-1.337 0-3.217.668-3.217 3.513v7.585h11.334l-1.325 12.876z"></path>
-                                            </svg>
-                                        </a>
-                                    </li>
-
-                                </motion.div>
-                                <motion.div
-
-                                    initial={{ opacity: 0, scale: 0.5 }}
-                                    animate={{ opacity: 1, scale: 1 }}
-                                    transition={{
-                                        duration: 0.5,
-                                        delay: 0.5,
-                                        ease: [0, 0.71, 0.2, 1.01],
-                                    }}
-                                >
-
-                                    <li className='hover:scale-110 transition-all duration-300 ease-linear backdrop-filter '>
-                                        <a href="https://www.linkedin.com/in/safayet-hossan-safin/" target='_blank'>
-                                            <svg xmlns="http://www.w3.org/2000/svg" className='w-12' viewBox="0 0 99.59 99.59" id="linkedin-circle">
-                                                <defs>
-                                                    <linearGradient id="a" x1="-1.971" x2="-1.264" y1="2.61" y2="3.317" gradientUnits="objectBoundingBox">
-                                                        <stop offset="0" stop-color="#2489be"></stop>
-                                                        <stop offset="1" stop-color="#0575b3"></stop>
-                                                    </linearGradient>
-                                                </defs>
-                                                <path fill="url(#a)" d="M56.82,7.025a49.795,49.795,0,1,0,49.8,49.795A49.795,49.795,0,0,0,56.82,7.025ZM43.534,80.893H32.6V45.572H43.534ZM38.016,40.946a6.518,6.518,0,1,1,6.465-6.517A6.492,6.492,0,0,1,38.016,40.946Zm46.49,39.947H73.626V62.353c0-5.085-1.932-7.924-5.953-7.924-4.376,0-6.662,2.956-6.662,7.924V80.893H50.525V45.572H61.011v4.757a12.319,12.319,0,0,1,10.644-5.835c7.49,0,12.851,4.573,12.851,14.034V80.893Z" transform="translate(-7.025 -7.025)"></path>
-                                            </svg>
-                                        </a>
-                                    </li>
-                                </motion.div>
-                                <motion.div
-
-                                    initial={{ opacity: 0, scale: 0.5 }}
-                                    animate={{ opacity: 1, scale: 1 }}
-                                    transition={{
-                                        duration: 0.5,
-                                        delay: 0.5,
-                                        ease: [0, 0.71, 0.2, 1.01],
-                                    }}
-                                >
-
-                                <li className='hover:scale-110 transition-all duration-300 ease-linear backdrop-filter '>
+                                <li className='hover:scale-110 transition-all duration-300 ease-linear backdrop-filter'>
+                                    <a href="https://www.facebook.com/safin.2360" target='_blank'>
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 112.196 112.196" id="facebook" className='w-12'>
+                                            <circle cx="56.098" cy="56.098" r="56.098" fill="#3b5998"></circle>
+                                            <path fill="#fff" d="M70.201 58.294h-10.01v36.672H45.025V58.294h-7.213V45.406h7.213v-8.34c0-5.964 2.833-15.303 15.301-15.303l11.234.047v12.51h-8.151c-1.337 0-3.217.668-3.217 3.513v7.585h11.334l-1.325 12.876z"></path>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li className='hover:scale-110 transition-all duration-300 ease-linear backdrop-filter'>
+                                    <a href="https://www.linkedin.com/in/safayet-hossan-safin/" target='_blank'>
+                                        <svg xmlns="http://www.w3.org/2000/svg" className='w-12' viewBox="0 0 99.59 99.59" id="linkedin-circle">
+                                            <defs>
+                                                <linearGradient id="a" x1="-1.971" x2="-1.264" y1="2.61" y2="3.317" gradientUnits="objectBoundingBox">
+                                                    <stop offset="0" stop-color="#2489be"></stop>
+                                                    <stop offset="1" stop-color="#0575b3"></stop>
+                                                </linearGradient>
+                                            </defs>
+                                            <path fill="url(#a)" d="M56.82,7.025a49.795,49.795,0,1,0,49.8,49.795A49.795,49.795,0,0,0,56.82,7.025ZM43.534,80.893H32.6V45.572H43.534ZM38.016,40.946a6.518,6.518,0,1,1,6.465-6.517A6.492,6.492,0,0,1,38.016,40.946Zm46.49,39.947H73.626V62.353c0-5.085-1.932-7.924-5.953-7.924-4.376,0-6.662,2.956-6.662,7.924V80.893H50.525V45.572H61.011v4.757a12.319,12.319,0,0,1,10.644-5.835c7.49,0,12.851,4.573,12.851,14.034V80.893Z" transform="translate(-7.025 -7.025)"></path>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li className='hover:scale-110 transition-all duration-300 ease-linear backdrop-filter'>
                                     <a href="https://github.com/safin33221" target='_blank'>
                                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" id="github" className='w-12'>
                                             <path fill="#00020c" fill-rule="evenodd" d="m60,12c0-4.42-3.58-8-8-8H12c-4.42,0-8,3.58-8,8v40c0,4.42,3.58,8,8,8h40c4.42,0,8-3.58,8-8V12h0Z"></path>
@@ -90,19 +54,7 @@ const Hero = () => {
                                         </svg>
                                     </a>
                                 </li>
-                                </motion.div>
-                                <motion.div
-
-                                    initial={{ opacity: 0, scale: 0.5 }}
-                                    animate={{ opacity: 1, scale: 1 }}
-                                    transition={{
-                                        duration: 0.5,
-                                        delay: 0.5,
-                                        ease: [0, 0.71, 0.2, 1.01],
-                                    }}
-                                >
-
-                                <li className='hover:scale-110 transition-all duration-300 ease-linear backdrop-filter '>
+                                <li className='hover:scale-110 transition-all duration-300 ease-linear backdrop-filter'>
                                     <a href="https://x.com/safin33221" target='_blank'>
                                         <svg xmlns="http://www.w3.org/2000/svg" className='w-12' viewBox="126.444 2.281 589 589" id="twitter">
                                             <circle cx="420.944" cy="296.781" r="294.5" fill="#2daae1"></circle>
@@ -110,28 +62,15 @@ const Hero = () => {
                                         </svg>
                                     </a>
                                 </li>
-                                </motion.div>
-                                <motion.div
-
-                                    initial={{ opacity: 0, scale: 0.5 }}
-                                    animate={{ opacity: 1, scale: 1 }}
-                                    transition={{
-                                        duration: 0.5,
-                                        delay: 0.5,
-                                        ease: [0, 0.71, 0.2, 1.01],
-                                    }}
-                                >
-
                                 <li>
-                                    <a href={resume} target='_blank' download={resume}><button className=" p-3 border-2 rounded-xl  border-[#271e5c] bg-tertiary text-secondary hover:text-white flex gap-2"> <span className='hidden md:flex'>Download</span> Resume</button></a>
+                                    <a href={resume} target='_blank' download={resume}><button className="p-3 border-2 rounded-xl border-[#271e5c] bg-tertiary text-secondary hover:text-white flex gap-2"> <span className='hidden md:flex'>Download</span> Resume</button></a>
                                 </li>
-                                </motion.div>
                             </ul>
                         </div>
                     </div>
                 </div>
-                <div className=" flex-1 mx-auto" >
-                    <img src={image} className=" w-[400px] rounded-full  border-[#915eff] shadow-card" alt="" />
+                <div className="flex-1 mx-auto">
+                    <img src={image} className="w-[400px] rounded-full border-[#915eff] shadow-card" alt="" />
                 </div>
             </div>
         </section>
