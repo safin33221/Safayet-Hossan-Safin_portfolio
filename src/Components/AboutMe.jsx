@@ -1,4 +1,3 @@
-import React from 'react';
 import SectionTile from '../Shared/SectionTile';
 import { motion } from "framer-motion";
 import { FaReact, FaCode, FaGamepad } from "react-icons/fa";
