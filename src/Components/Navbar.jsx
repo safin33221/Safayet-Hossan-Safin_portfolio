@@ -4,6 +4,7 @@ import menu from '../assets/menu.svg'
 import close from '../assets/close.svg'
 import { Link } from 'react-scroll';
 import resume from '../assets/safayet_hossan.pdf';
+import ResumeDownload from './ResumeDownload';
 
 const Navbar = () => {
     const [active, setActive] = useState('home')
@@ -74,7 +75,7 @@ const Navbar = () => {
                     </ul>
                 </div>
                 <div className='flex items-center gap-7'>
-                <a href={resume} target='_blank' download={resume}><button className="btn bg-transparent hover:bg-transparent text-secondary hover:text-white">Resume</button></a>
+                    <ResumeDownload/>
                     <div>
                         <img
                             className='md:hidden w-6' src={toggle ? close : menu} alt=""

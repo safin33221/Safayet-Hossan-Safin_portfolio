@@ -4,6 +4,7 @@ import image from '../assets/safin.png';
 import ScrollSection from '../Hooks/ScrollSection';
 import resume from '../assets/safayet_hossan.pdf';
 import { motion } from 'framer-motion';
+import Button from './Button';
 
 const Hero = () => {
     return (
@@ -40,7 +41,7 @@ const Hero = () => {
                         </p>
 
                         {/* Social Icons & Resume */}
-                        <div className='mt-5'>
+                        {/* <div className='mt-5'>
                             <ul className='flex gap-5 mb-6 text-4xl items-center'>
                                 <li >
                                     <a href="https://www.facebook.com/safin.2360" target='_blank'>
@@ -57,7 +58,7 @@ const Hero = () => {
                                         <FaGithub className='hover:text-gray-100 transition duration-300' />
                                     </a>
                                 </li>
-                                <li>
+                              <li>
                                     <a href="https://x.com/safin33221" target='_blank'>
                                         <FaTwitter className='hover:text-[#1DA1F2] text-[#1da0f2c8] transition duration-300' />
                                     </a>
@@ -70,7 +71,9 @@ const Hero = () => {
                                     </a>
                                 </li>
                             </ul>
-                        </div>
+                        </div> */}
+
+                        <Button/>
                     </motion.div>
                 </div>
 
