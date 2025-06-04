@@ -8,15 +8,15 @@ import Button from './Button';
 
 const Hero = () => {
     return (
-        <section className='w-full min-h-screen mx-auto px-4 md:px-12 pt-28'>
+        <section className='w-full lg:min-h-screen mx-auto px-4 md:px-12 pt-28'>
             <div className='flex flex-col-reverse md:flex-row items-center'>
-                <div className='flex gap-5 flex-1 items-center'>
+                <div className='flex gap-5 flex-1 items-center mt-2'>
                     {/* Line Indicator */}
                     <motion.div
                         initial={{ opacity: 0, y: 50 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 1 }}
-                        className='flex flex-col items-center justify-center'
+                        className='flex flex-col items-center justify-center mt-4'
                     >
                         <div className="w-5 h-5 rounded-full bg-[#915eff]" />
                         <div className="w-1 sm:h-80 h-80 violet-gradient" />
@@ -27,9 +27,9 @@ const Hero = () => {
                         initial={{ opacity: 0, x: -60 }}
                         animate={{ opacity: 1, x: 0 }}
                         transition={{ duration: 1.2 }}
-                        className='mt-6'
+                        className=''
                     >
-                        <h1 className='font-black text-white lg:text-4xl sm:text-3xl text-2xl mt-5'>
+                        <h1 className='font-black text-white lg:text-4xl sm:text-3xl text-2xl '>
                             Hi, I'm <span className='text-[#915EFF]'>Safin</span>
                         </h1>
                         <p className='font-black text-white-100 lg:text-5xl sm:text-4xl text-2xl mt-5'>
@@ -72,8 +72,9 @@ const Hero = () => {
                                 </li>
                             </ul>
                         </div> */}
-
-                        <Button/>
+                        <div className='hidden md:block mt-4'>
+                            <Button />
+                        </div>
                     </motion.div>
                 </div>
 
@@ -86,6 +87,10 @@ const Hero = () => {
                 >
                     <img src={image} className="w-[400px] rounded-full border-[#915eff] shadow-card" alt="safin" />
                 </motion.div>
+            </div>
+            <div className='md:hidden m-auto'>
+
+                <Button />
             </div>
         </section>
     );

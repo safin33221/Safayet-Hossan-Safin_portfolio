@@ -23,6 +23,7 @@ export default {
       backgroundImage: {
         "hero-pattern": "url('/src/assets/herobg.png')",
       },
+      
     },
   },
   plugins: [

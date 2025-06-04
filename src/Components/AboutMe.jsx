@@ -9,7 +9,7 @@ const AboutMe = () => {
     return (
         <div>
             <SectionTile subheading="Introduction" heading="About Me" />
-            <section className="text-white px-6 md:px-16">
+            <section className="text-white px-3 md:px-16">
                 <div className="max-w-4xl mx-auto text-center">
                     <motion.div
                         className="text-lg text-gray-300 mb-6"
@@ -24,10 +24,10 @@ const AboutMe = () => {
                 <div className="mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 h-full">
                     {/* What I Do */}
                     <motion.div
-                        className="w-full p-[1px] green-pink-gradient rounded-[20px] shadow-card transition-all duration-300 ease-in-out"
+                        className="w-full p-[1px] green-pink-gradient rounded-[20px]  shadow-card transition-all duration-300 ease-in-out"
                         whileHover={{ scale: 1.01 }}
                     >
-                        <div className="bg-tertiary rounded-[20px] py-5 px-12 min-h-[280px] flex justify-evenly items-center flex-col">
+                        <div className="bg-tertiary rounded-[20px] py-5 px-12 h-full min-h-[280px] flex justify-evenly items-center flex-col">
                             <FaReact className="text-4xl text-teal-400 mb-4" />
                             <h3 className="text-xl font-semibold mb-2">What I Do</h3>
                             <p className="text-gray-300">
@@ -72,7 +72,7 @@ const AboutMe = () => {
                         className="w-full p-[1px] green-pink-gradient rounded-[20px] shadow-card transition-all duration-300 ease-in-out"
                         whileHover={{ scale: 1.01 }}
                     >
-                        <div className="bg-tertiary rounded-[20px] py-5 px-12 min-h-[280px] flex justify-evenly items-center flex-col">
+                        <div className="bg-tertiary h-full  rounded-[20px] py-5 px-12 min-h-[280px] flex justify-evenly items-center flex-col">
                             <FaGamepad className="text-4xl text-teal-400 mb-4" />
                             <h3 className="text-xl font-semibold mb-2">Hobbies & Interests</h3>
                             <p className="text-gray-300 text-center">

@@ -5,7 +5,7 @@ const Button = () => {
 
 
     return (
-        <div className='w-fit '>
+        <div className='w-fit mx-auto md:ml-0  '>
             <svg width={0} height={0} style={{ position: 'absolute' }}>
                 <defs>
                     <clipPath id="squircleClip" clipPathUnits="objectBoundingBox">
@@ -15,7 +15,7 @@ const Button = () => {
             </svg>
             <div className="relative">
                 <div className="absolute inset-0 bg-black/20 backdrop-blur-xl rounded-2xl border   border-white/10 shadow-2xl" />
-                <div className="relative flex items-end gap-x-2 p-3 ">
+                <div className="relative flex items-center gap-x-2 p-3 justify-center ">
                     <div className="relative">
                         <a href='https://github.com/safin33221/' target='_blank' style={{ clipPath: 'url(#squircleClip)' }} className="w-10 h-10 bg-gradient-to-br from-gray-700 to-gray-900 rounded-xl flex items-center justify-center shadow-lg border border-gray-600/50 cursor-pointer transform transition-all duration-300 ease-out hover:scale-110 hover:-translate-y-2 hover:shadow-2xl">
                             <svg viewBox="0 0 24 24" fill="currentColor" className="h-8 w-8 text-white" xmlns="http://www.w3.org/2000/svg">
