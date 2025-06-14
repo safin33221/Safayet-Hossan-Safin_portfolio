@@ -4,6 +4,7 @@ import health from '../assets/projects/health.png'
 import sportstore from '../assets/projects/sportstore.png'
 import restaurant from '../assets/projects/restaurant.png'
 import tastyride from '../assets/projects/tastyride.png'
+import globalThought from '../assets/projects/globalThought.png'
 import { Tilt } from 'react-tilt';
 import github from '../assets/github.png'
 import link from '../assets/link.svg'
@@ -14,6 +15,56 @@ import { RiGlobalLine } from 'react-icons/ri';
 
 const Projects = () => {
     const projects = [
+        {
+            id: 5,
+            name: "Global Thought – AI-Powered Blogging & Content Intelligence",
+            description:
+                "A cutting-edge blogging platform that empowers writers to create high-quality, SEO-optimized content using AI assistance, real-time insights, and a modern editor tailored for thoughtful publishing and global impact.",
+            tags: [
+                {
+                    name: "next.js",
+                    color: "blue-text-gradient",
+                },
+                {
+                    name: "typescript",
+                    color: "green-text-gradient",
+                },
+                {
+                    name: "nextAuth",
+                    color: "orange-text-gradient",
+                },
+                {
+                    name: "mongodb",
+                    color: "purple-text-gradient",
+                },
+                {
+                    name: "shadcn/ui",
+                    color: "pink-text-gradient",
+                },
+                {
+                    name: "Gemini ai",
+                    color: "red-text-gradient",
+                }
+            ],
+            challenges_faced: [
+                "Building a custom blog editor with AI suggestions and rich text support (Tiptap)",
+                "Integrating SEO analyzer with keyword density and readability scoring",
+                "Designing scalable PostgreSQL schemas for content, tags, and user preferences",
+                "Creating a seamless dark/light theme toggle with consistent typography",
+                "Handling authentication, rate limiting, and secure content previewing"
+            ],
+            potential_improvements: [
+                "Adding real-time collaborative editing using WebSockets",
+                "Integrating multilingual content generation and translation",
+                "Building a marketplace for user-contributed blog templates",
+                "Creating a smart tag recommendation engine using embeddings",
+                "Launching a community insights dashboard powered by AI analytics"
+            ],
+            image: globalThought, // Replace with your imported image variable
+            source_code_link: "https://github.com/safin33221/Global_Thought-Ai-Prowerd-BlogPost_Using-NextJs",
+            live_page_link: "https://global-thought.vercel.app/"
+        }
+        ,
         {
             id: 4,
             name: "TastyRide - Smart Food Delivery Platform",
@@ -229,7 +280,7 @@ const Projects = () => {
                             <img
                                 src={project.image}
                                 alt='project_image'
-                                className='w-full h-full object-cover rounded-2xl '
+                                className='w-full h-full object-center bg-cover rounded-2xl '
                             />
 
                             <div className='absolute inset-0 flex gap-3 justify-end m-3 card-img_hover'>
@@ -254,7 +305,7 @@ const Projects = () => {
                         </div>
 
                         <div className='mt-5'>
-                            <h3 className='text-white font-bold text-[24px]'>{project.name}</h3>
+                            <h3 className='text-white font-bold text-[18px]'>{project.name}</h3>
                             <p className='mt-2 text-secondary text-[14px]'>{project.description}</p>
                         </div>
 
@@ -270,7 +321,7 @@ const Projects = () => {
                         </div>
                         <div className='justify-end'>
                             <Link to={`projects/${project.id}`}>
-                                <button className=" rounded-lg text-secondary hover:text-white p-4 border-2 border-[#271e5c]">view Detail</button>
+                                <button className=" rounded-lg text-secondary hover:text-white p-2 mt-3 border-2 border-[#271e5c]">view Detail</button>
                             </Link>
                         </div>
                     </Tilt>)
