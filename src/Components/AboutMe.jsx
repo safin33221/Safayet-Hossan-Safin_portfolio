@@ -21,7 +21,7 @@ const AboutMe = () => {
                     </motion.div>
                 </div>
 
-                <div className="mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 h-full">
+                <div className="mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 h-full">
                     {/* What I Do */}
                     <motion.div
                         className="w-full p-[1px] green-pink-gradient rounded-[20px]  shadow-card transition-all duration-300 ease-in-out"
@@ -38,7 +38,7 @@ const AboutMe = () => {
 
                     {/* Programming Journey */}
                     <motion.div
-                        className="w-full p-[1px] green-pink-gradient rounded-[20px] shadow-card transition-all duration-300 ease-in-out"
+                        className="w-full p-[1px] green-pink-gradient rounded-[20px]  shadow-card transition-all duration-300 ease-in-out"
                         whileHover={{ scale: 1.01 }}
                     >
                         <div className="bg-tertiary rounded-[20px] py-5 px-12 min-h-[280px] flex justify-evenly items-center flex-col">
@@ -52,11 +52,11 @@ const AboutMe = () => {
 
                     {/* Education */}
                     <motion.div
-                        className="w-full p-[1px] green-pink-gradient rounded-[20px] shadow-card transition-all duration-300 ease-in-out"
+                        className="w-full p-[1px] green-pink-gradient rounded-[20px]  shadow-card transition-all duration-300 ease-in-out"
                         whileHover={{ scale: 1.01 }}
                     >
-                        <div className="bg-tertiary rounded-[20px] py-5 px-12 min-h-[280px] flex justify-evenly items-center flex-col">
-                            <PiStudentBold className="text-4xl text-teal-400 mb-4" />
+                        <div className="bg-tertiary h-full rounded-[20px] py-5 px-12 min-h-[280px] flex justify-evenly items-center flex-col">
+                            <PiStudentBold className="text-4xl text-teal-400 mb-4 flex flex-col justify-between " />
                             <h3 className="text-xl font-semibold text-center">Diploma in Computer Science and Technology</h3>
                             <p className="text-gray-300 mb-2 text-center">
                                 Feni Polytechnic Institute, Feni, Bangladesh
@@ -69,7 +69,7 @@ const AboutMe = () => {
 
                     {/* Hobbies */}
                     <motion.div
-                        className="w-full p-[1px] green-pink-gradient rounded-[20px] shadow-card transition-all duration-300 ease-in-out"
+                      className="w-full p-[1px] green-pink-gradient rounded-[20px]  shadow-card transition-all duration-300 ease-in-out"
                         whileHover={{ scale: 1.01 }}
                     >
                         <div className="bg-tertiary h-full  rounded-[20px] py-5 px-12 min-h-[280px] flex justify-evenly items-center flex-col">
