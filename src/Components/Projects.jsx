@@ -265,7 +265,7 @@ const Projects = () => {
     return (
         <div>
             <SectionTile heading="A Glimpse of My Development Journey" subheading=" My Projects" />
-            <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 px-5 py-10'>
+            <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 px-5 py-10'>
                 {
                     projects.map((project, idx) => <Tilt key={idx}
                         options={{
@@ -274,7 +274,7 @@ const Projects = () => {
                             speed: 850,
 
                         }}
-                        className='bg-tertiary flex flex-col justify-between p-5 h-full rounded-2xl sm:w-[360px] w-full mx-auto'
+                        className='bg-tertiary  flex flex-col justify-between p-5 h-full rounded-2xl  w-full mx-auto'
                     >
                         <div className='relative w-full h-[230px] cursor-pointer'>
                             <img
@@ -283,7 +283,7 @@ const Projects = () => {
                                 className='w-full h-full object-center bg-cover rounded-2xl '
                             />
 
-                            <div className='absolute inset-0 flex gap-3 justify-end m-3 card-img_hover'>
+                            <div className='absolute inset-0 flex gap-3 justify-end m-3 card-img_hover '>
                                 <div
                                     onClick={() => window.open(project.source_code_link, "_blank")}
                                     className='black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer'
@@ -300,6 +300,11 @@ const Projects = () => {
                                 >
                                     <RiGlobalLine className='w-1/2 h-1/2 object-contain text-white' />
 
+                                </div>
+                                <div className='  w-fit h-10 rounded-full flex justify-center items-center cursor-pointer'>
+                                    <Link to={`projects/${project.id}`}>
+                                        <button className=" rounded-lg black-gradient object-contain relative -top-1.5  text-white hover:text-white p-2 mt-3 border-2 border-[#271e5c]">view Detail</button>
+                                    </Link>
                                 </div>
                             </div>
                         </div>
@@ -319,11 +324,7 @@ const Projects = () => {
                                 </p>
                             ))}
                         </div>
-                        <div className='justify-end'>
-                            <Link to={`projects/${project.id}`}>
-                                <button className=" rounded-lg text-secondary hover:text-white p-2 mt-3 border-2 border-[#271e5c]">view Detail</button>
-                            </Link>
-                        </div>
+
                     </Tilt>)
                 }
             </div>

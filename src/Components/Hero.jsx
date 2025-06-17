@@ -8,7 +8,7 @@ import Button from './Button';
 
 const Hero = () => {
     return (
-        <section className='w-full lg:min-h-screen mx-auto px-4 md:px-12 pt-28'>
+        <section className='w-full  mx-auto px-4 md:px-12 pt-28'>
             <div className='flex flex-col-reverse md:flex-row items-center'>
                 <div className='flex gap-5 flex-1 items-center mt-2'>
                     {/* Line Indicator */}

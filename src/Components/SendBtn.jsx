@@ -69,7 +69,7 @@ const StyledWrapper = styled.div`
     }
 
     to {
-      transform: translateY(-0.1em);
+      transform: translateY(-0.2em);
     }
   }`;
 
