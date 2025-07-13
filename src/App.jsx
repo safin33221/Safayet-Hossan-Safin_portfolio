@@ -7,6 +7,7 @@ import Navbar from "./Components/Navbar"
 import PrepareToProduction from "./Components/PrepareToProduction"
 import Projects from "./Components/Projects"
 import Skills from "./Components/Skills"
+import { AOSProvider } from "./Provider/AosProvider"
 
 
 
@@ -39,6 +40,7 @@ function App() {
       <Skills />
       <Projects />
       <Contact />
+      <AOSProvider />
 
     </div>
   )

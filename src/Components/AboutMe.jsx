@@ -7,10 +7,14 @@ import { PiStudentBold } from 'react-icons/pi';
 
 const AboutMe = () => {
     return (
-        <div>
+        <div
+        >
             <SectionTile subheading="Introduction" heading="About Me" />
             <section className="text-white px-3 md:px-16">
-                <div className="max-w-4xl mx-auto text-center">
+                <div
+                    data-aos="fade-up"
+                    data-aos-duration="2000"
+                    className="max-w-4xl mx-auto text-center">
                     <motion.div
                         className="text-lg text-gray-300 mb-6"
                         initial={{ opacity: 0, y: 20 }}
@@ -26,6 +30,9 @@ const AboutMe = () => {
                     <motion.div
                         className="w-full p-[1px] green-pink-gradient rounded-[20px]  shadow-card transition-all duration-300 ease-in-out"
                         whileHover={{ scale: 1.01 }}
+                        data-aos="fade-up"
+                        data-aos-duration="2000"
+
                     >
                         <div className="bg-tertiary rounded-[20px] py-5 px-4 h-full min-h-[280px] flex justify-evenly items-center flex-col">
                             <FaReact className="text-4xl text-teal-400 mb-4" />
@@ -40,6 +47,9 @@ const AboutMe = () => {
                     <motion.div
                         className="w-full p-[1px] green-pink-gradient rounded-[20px]  shadow-card transition-all duration-300 ease-in-out"
                         whileHover={{ scale: 1.01 }}
+                        data-aos="fade-up"
+                        data-aos-duration="2000"
+
                     >
                         <div className="bg-tertiary rounded-[20px] py-5 px-4 min-h-[280px] flex justify-evenly items-center flex-col">
                             <FaCode className="text-4xl text-teal-400 mb-4" />
@@ -54,6 +64,9 @@ const AboutMe = () => {
                     <motion.div
                         className="w-full p-[1px] green-pink-gradient rounded-[20px]  shadow-card transition-all duration-300 ease-in-out"
                         whileHover={{ scale: 1.01 }}
+                        data-aos="fade-up"
+                        data-aos-duration="2000"
+
                     >
                         <div className="bg-tertiary h-full rounded-[20px] py-5 px-4 min-h-[280px] flex justify-evenly items-center flex-col">
                             <PiStudentBold className="text-4xl text-teal-400 mb-4 flex flex-col justify-between " />
@@ -69,8 +82,11 @@ const AboutMe = () => {
 
                     {/* Hobbies */}
                     <motion.div
-                      className="w-full p-[1px] green-pink-gradient rounded-[20px]  shadow-card transition-all duration-300 ease-in-out"
+                        className="w-full p-[1px] green-pink-gradient rounded-[20px]  shadow-card transition-all duration-300 ease-in-out"
                         whileHover={{ scale: 1.01 }}
+                        data-aos="fade-up"
+                        data-aos-duration="2000"
+
                     >
                         <div className="bg-tertiary h-full  rounded-[20px] py-5 px-4 min-h-[280px] flex justify-evenly items-center flex-col">
                             <FaGamepad className="text-4xl text-teal-400 mb-4" />

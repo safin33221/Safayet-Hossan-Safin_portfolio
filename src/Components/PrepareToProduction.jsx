@@ -2,7 +2,10 @@ import React from 'react';
 
 const PrepareToProduction = () => {
     return (
-        <section className="py-16 bg-gradient-to-b from-[#0f0f1b8d] to-[#18182787] text-white px-6">
+        <section
+            data-aos="fade-up"
+            data-aos-duration="2000" 
+        className="py-16 bg-gradient-to-b from-[#0f0f1b8d] to-[#18182787] text-white px-6">
             <h2 className="text-4xl font-bold text-center mb-12"> From Paper to Production</h2>
             <div className="grid md:grid-cols-3 gap-10">
 

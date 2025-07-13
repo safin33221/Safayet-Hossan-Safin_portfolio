@@ -265,15 +265,14 @@ const Projects = () => {
     return (
         <div>
             <SectionTile heading="A Glimpse of My Development Journey" subheading=" My Projects" />
-            <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 px-5 py-10'>
+            <div
+
+                    data-aos="fade-up"
+                    data-aos-duration="3000"
+                className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 px-5 py-10'>
                 {
                     projects.map((project, idx) => <Tilt key={idx}
-                        options={{
-                            max: 20,
-                            scale: 1,
-                            speed: 850,
-
-                        }}
+                        
                         className='bg-tertiary  flex flex-col justify-between p-5 h-full rounded-2xl  w-full mx-auto'
                     >
                         <div className='relative w-full h-[230px] cursor-pointer'>

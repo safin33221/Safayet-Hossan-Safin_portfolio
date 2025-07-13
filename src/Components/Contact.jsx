@@ -46,7 +46,10 @@ const Contact = () => {
             })
     }
     return (
-        <div className="px-2 pb-10">
+        <div
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            className="px-2 pb-10">
             <SectionTile subheading="Get in touch" heading="Contact" />
 
             <div className={`p-2 md:px-10 md:flex gap-10 `}>
@@ -54,7 +57,7 @@ const Contact = () => {
                     <h1 className="text-secondary font-bold text-2xl" >Let's Chat....</h1>
                     <h2 className='text-3xl font-bold py-2 text-white'>Tell Me About Your Project.</h2>
                     <p className="text-secondary font-bold">Let's create something together🤘</p>
-                    <p className="text-white fontpo">💡 Whether you have a groundbreaking idea, need help with web development, or want to collaborate on a creative project, I'm here to bring your vision to life. Feel free to reach out, and let's build something amazing together!</p>
+                    <p className="text-white ">💡 Whether you have a groundbreaking idea, need help with web development, or want to collaborate on a creative project, I'm here to bring your vision to life. Feel free to reach out, and let's build something amazing together!</p>
                     <hr className='my-5' />
                     <div className=' flex flex-col '>
                         <h1 className='text-xl border-b-2 w-fit border-gray-400 text-gray-300'>Reach Out to Me</h1>
@@ -125,7 +128,7 @@ const Contact = () => {
 
                         <button
                             type='submit'
-                            
+
                             className='bg-tertiary  py-2 mb-8   rounded-xl outline-none  text-white font-bold shadow-md shadow-primary'
                         >
 
