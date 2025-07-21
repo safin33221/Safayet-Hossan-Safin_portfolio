@@ -33,10 +33,10 @@ const Hero = () => {
                             Hi, I'm <span className='text-[#915EFF]'>Safin</span>
                         </h1>
                         <p className='font-black text-white-100 lg:text-5xl sm:text-4xl text-2xl mt-5'>
-                            Frontend Web Developer
+                            Full Stack   Web Developer
                         </p>
                         <p className="text-2xl text-white-100 my-4">Your Vision, My Code_</p>
-                        <p className="md:w-4/5 w-full text-gray-400 capitalize text-lg">
+                        <p className="md:w-4/5 w-full text-gray-300 capitalize text-lg">
                             Crafting innovative digital experiences that bring your ideas to life, blending creativity and functionality to build solutions that inspire, engage, and deliver results.
                         </p>
 

@@ -18,7 +18,7 @@ import ScrollSection from '../Hooks/ScrollSection'
 
 const Skills = () => {
     const skills = [
-        html, css, tailwind, javascript, typescript, reactjs, nextjs, redux, ExpressJs, firebase, nodejs, mongodb, postgres, git, figma
+        html, css, tailwind, javascript, typescript, reactjs,  firebase, nodejs, mongodb, postgres, git, figma ,redux, ExpressJs,
     ]
     return (
         <div

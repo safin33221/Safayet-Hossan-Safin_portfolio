@@ -25,7 +25,9 @@ const AboutMe = () => {
                     </motion.div>
                 </div>
 
-                <div className="mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 h-full">
+                <div
+
+                    className="mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 h-full">
                     {/* What I Do */}
                     <motion.div
                         className="w-full p-[1px] green-pink-gradient rounded-[20px]  shadow-card transition-all duration-300 ease-in-out"
